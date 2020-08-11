@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mohammad Reza Raeisy</title>
+        <meta charset="utf-8"/>
+        <script src="info.js"></script>
+       <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+    </head>
+    <nav class="menu">
+        <ul>
+          <li><a href="honesty.html">honesty</a></li>
+          <li><a href="reflection.html">reflection</a></li>
+          <li><a href="info.html">info</a></li>
+        </ul>
+      </nav>
+    <body>
+        <form action="https://httpbin.org/post" name= "signup" onsubmit = "return validate(this)" onreset="alert('will get reset')" method="POST">
+        <p>
+            First Name: <br>
+            <input type="text" name="FirstName" title = "Name must start with a Capital and be between 3-20 characters" pattern="[A-Z][a-zA-Z]{3,20}" >
+        </p>
+        <p>
+            Last Name: <br>
+            <input type="text" name="lastName" title = "Name must start with a Capital and be between 3-20 characters" pattern="[A-Z][a-zA-Z]{3,20}"/> 
+        </p>
+        <p>
+            Password: <br>
+            <input type="password" name="Password1"/>
+        </p>
+        <p>
+            Password: <br>
+            <input type='password' name='Password2'/>
+            <br>
+        </p>
+        <p>
+            E-Mail: <br>
+            <input type="email" name="Email">
+        </p>
+        <p>
+            User Name: <br>
+            <input type="text" name="user"/>
+        </p>
+        <p>
+            Age: <br>
+            <input type="number" name="age18-60" min="18" max="60">
+        </p>
+        <p>Education Status: </p>
+       
+        <label><input type="radio" name="EducationStat" value="Gradutated">Gradutated</label>
+           
+        <br>
+        <label><input type="radio" name="EducationStat" value="Current Enrolled">Current Enrolled</label>
+        
+        <br>
+        <label><input type="radio" name="EducationStat" value="Did not graduate">Did not graduate</label>
+        
+        <br>
+   
+
+
+    
+    <select name="Media" size="6">
+        <option value="0">- select -</option>
+        <option value="1">Technical Diploma</option>
+        <option value="2" >College Diploma</option>
+        <option value="3" >bachelors Degree</option>
+        <option value="4" >Masters Degree</option>
+        <option value="5" >others</option>
+      </select>
+
+        <br>
+        
+        <input type="hidden" name="LastName" id="lastName" value="Raeisy" /> 
+        <input type="hidden" name="studentId" id="studentId" value="137420188" />
+        <input type= "submit" value="Submit">
+        <input type="reset" value="Reset" onclick="clearErrors();">
+
+        </form>
+        <div id="errors"></div> 
+    </body>
+    <footer>
+        Git Hub Link: 
+        <a href="https://github.com/mamadrezaa11/BTI225FINAL/"> BTI225 Final Assessment </a>
+    </footer>
+    
+</html>

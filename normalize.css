@@ -1,0 +1,41 @@
+body{
+    margin: 0 20%;
+}
+input:focus, textarea:focus{
+    background-color: lightyellow;
+    }
+
+
+
+form{
+  width: 400px;
+  margin: 0 auto;
+  padding: 4em;
+  border: 2px solid red;
+  border-radius: 20%;
+}
+
+nav{
+    text-align: left;
+}
+div.reflect{
+text-decoration: solid;
+text-shadow: blue;
+}
+div.honesty{
+    text-decoration: solid;
+text-shadow: green;
+}
+footer {
+    height: 20px;
+    background-color: grey;
+  }
+body{
+background-color: lavender;
+  }
+  nav{
+      text-decoration: lightcoral;
+      text-align: left;
+      margin-top: 200px;
+      text-size-adjust: initial;
+  }
